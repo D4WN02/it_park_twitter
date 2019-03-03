@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Twitter v2.01{% endblock %}
+
+{% block body %}
+    <div class="blog-post">
+        <h2 class="blog-post-title">{{ post.title }}</h2>
+        <p class="blog-post-meta">
+            {{ post.createdAt|date("d.m.Y h:i:s", "Europe/Moscow")}}
+            |
+            {{ post.author.username }}
+        </p>
+        {{ post.text }}
+    </div>
+
+{% endblock %}

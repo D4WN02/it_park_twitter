@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Создание поста!{% endblock %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}
